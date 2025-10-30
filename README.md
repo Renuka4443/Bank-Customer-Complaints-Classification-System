@@ -1,4 +1,4 @@
-# 🏦 Bank Complaint Classification System  
+# 🏦 Bank Complaint Classification System
 
 ## 💼 Overview  
 The **Bank Complaint Classification System** is an **NLP-based solution** that automatically classifies customer complaints received by banks and financial institutions. It uses **machine learning models** trained on real-world complaint data to identify the appropriate product category, such as **Credit Card**, **Bank Account**, **Loans & Mortgages**, and others making the complaint-handling process faster, more efficient, and improving the overall customer experience.  
@@ -23,6 +23,26 @@ This project uses two publicly available complaint datasets. The same preprocess
 | **Dataset 2 (Secondary)** | [Consumer Complaints Data (CFPB)](https://www.kaggle.com/datasets/sebastienverpile/consumercomplaintsdata) | **24,374** | Debt Collection, Mortgage, Credit Reporting, Loan, Credit Card, Bank Account |
 
 > Both datasets contain textual customer complaints along with corresponding product categories, enabling effective **training**, **validation**, and **performance comparison** of machine learning models across varied banking domains.  
+
+
+### Distribution of Complaints
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8186cc61-69ac-40f0-b358-1c957631d53b" width="400" alt="Dataset 1 Distribution" />
+      <br>
+      <b>Figure 1:</b> Dataset 1 Distribution
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b23b3ff0-c740-4272-b76b-9e5a315ecff9" width="400" alt="Dataset 2 Distribution" />
+      <br>
+      <b>Figure 2:</b> Dataset 2 Distribution
+    </td>
+  </tr>
+</table>
+
+
 
 ---
 
@@ -135,9 +155,74 @@ streamlit run app.py
 ```
 Once the app starts, open the **local URL** shown in your terminal to access the **Bank Complaint Classification System**.
 
+## 🛠️ Technologies Used  
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="220">
+  <a href="https://www.python.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  </a>
+</td>
+<td align="center" width="220">
+  <a href="https://streamlit.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Streamlit-UI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  </a>
+</td>
+<td align="center" width="220">
+  <a href="https://scikit-learn.org/" target="_blank">
+    <img src="https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+  </a>
+</td>
+<td align="center" width="220">
+  <a href="https://imbalanced-learn.org/" target="_blank">
+    <img src="https://img.shields.io/badge/imbalanced--learn-SMOTE-005571?style=for-the-badge" />
+  </a>
+</td>
+</tr>
+<tr>
+<td align="center" width="220">
+  <a href="https://www.nltk.org/" target="_blank">
+    <img src="https://img.shields.io/badge/NLTK-NLP-154F28?style=for-the-badge" />
+  </a>
+</td>
+<td align="center" width="220">
+  <a href="https://pandas.pydata.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Pandas-Data-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  </a>
+  <br/>
+  <a href="https://numpy.org/" target="_blank">
+    <img src="https://img.shields.io/badge/NumPy-Array-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+  </a>
+</td>
+<td align="center" width="220">
+  <a href="https://plotly.com/python/" target="_blank">
+    <img src="https://img.shields.io/badge/Plotly-Charts-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" />
+  </a>
+</td>
+<td align="center" width="220">
+  <a href="https://jupyter.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+  </a>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
 ---
 
 ## 🏁 Conclusion
 
-The **Bank Complaint Classification System** effectively demonstrates how **Machine Learning (ML)** and **Natural Language Processing (NLP)** can automate the classification of customer complaints with remarkable accuracy and consistency. By leveraging models like **Logistic Regression** and **LinearSVC**, the system streamlines the complaint-handling process, enhances operational efficiency, and supports data-driven decision-making in banking services.
+The Bank Complaint Classification System demonstrates how **machine learning (ML)** and **natural language processing (NLP)** can automate the classification of customer complaints with high accuracy and reliability. By leveraging models such as **Logistic Regression** and **LinearSVC**, the system streamlines complaint handling, improves operational efficiency, and promotes data-driven decision-making within banking services.
+
+---
+## 📚 References
+1. Adham Elkomy. *Bank Customer Complaint Analysis Dataset*. Kaggle, 2022. [Link](https://www.kaggle.com/datasets/adhamelkomy/bank-customer-complaint-analysis)  
+2. Sebastien Verpile. *Consumer Complaints Data (CFPB)*. Kaggle, 2023. [Link](https://www.kaggle.com/datasets/sebastienverpile/consumercomplaintsdata)  
+
 
