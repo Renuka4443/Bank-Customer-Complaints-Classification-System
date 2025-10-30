@@ -5,20 +5,21 @@ The **Bank Complaint Classification System** is an **NLP-based solution** that a
 
 ### 🔑 Key Highlights  
 - **Machine Learning Models Used:**  
-  - **Logistic Regression**  
-  - **Random Forest**  
-- **Training Dataset:** Utilized the **CFPB Consumer Complaint Dataset** to learn complaint patterns across various banking products.  
-- **Evaluation Dataset:** Tested the models on a **separate bank complaint dataset** to validate robustness and ensure generalization to unseen data.  
+   **1. Logistic Regression**  
+   **2. Random Forest Classifier**  
+
+- **Training & Evaluation Datasets:**  
+The models were trained and evaluated on **two similar real-world datasets**, the **Bank Customer Complaint Dataset** and the **CFPB Consumer Complaint Dataset**, to compare model performance and assess generalization across different data sources.  
 
 ---
 
 ## 📂 Dataset Source  
 
-This project uses two publicly available complaint datasets. The same preprocessing and TF-IDF feature extraction techniques were consistently applied to both datasets.  
+This project uses two publicly available complaint datasets. The same preprocessing steps and **TF-IDF feature extraction** techniques were consistently applied to both datasets to ensure uniformity and comparability.  
 
-| Dataset Type | Name & Link | Categories Included |
-|---------------|-------------|----------------------|
-| **Primary** | [Bank Customer Complaint Analysis](https://www.kaggle.com/datasets/adhamelkomy/bank-customer-complaint-analysis) | Credit Card, Retail Banking, Credit Reporting, Mortgages & Loans, Debt Collection |
-| **Secondary** | [Consumer Complaints Data (CFPB)](https://www.kaggle.com/datasets/sebastienverpile/consumercomplaintsdata) | Debt Collection, Mortgage, Credit Reporting, Loan, Credit Card, Bank Account |
+| Dataset Type | Name & Link | Number of Records | Categories Included |
+|---------------|-------------|-------------------|----------------------|
+| **Dataset 1 (Primary)** | [Bank Customer Complaint Analysis](https://www.kaggle.com/datasets/adhamelkomy/bank-customer-complaint-analysis) | **162,421** | Credit Reporting, Debt Collection, Credit Card, Mortgages & Loans, Retail Banking |
+| **Dataset 2 (Secondary)** | [Consumer Complaints Data (CFPB)](https://www.kaggle.com/datasets/sebastienverpile/consumercomplaintsdata) | **24,374** | Debt Collection, Mortgage, Credit Reporting, Loan, Credit Card, Bank Account |
 
-> Both datasets contain textual customer complaints along with corresponding product categories, enabling effective model training and evaluation across varied banking domains.  
+> Both datasets contain textual customer complaints along with corresponding product categories, enabling effective **training**, **validation**, and **performance comparison** of machine learning models across varied banking domains.  
