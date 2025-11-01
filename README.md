@@ -6,7 +6,7 @@ The **Bank Complaint Classification System** is an **NLP-based application** tha
 
 
 ### 🔑 Key Highlights  
-- **Machine Learning Models Used:**  
+- **Machine Learning Algorithms Applied:**  
    1. Logistic Regression  
   2. Support Vector Machine (LinearSVC)
 
