@@ -59,7 +59,16 @@ Below is the end-to-end workflow followed in this project:
    Gathered complaint data from two real-world sources: the **Bank Customer Complaint Dataset** and the **CFPB Consumer Complaint Dataset**.  
 
 2. **Data Preprocessing:**  
-   Removed null values, duplicates, punctuation, and stopwords; converted text to lowercase and applied lemmatization for normalization, followed by addressing class imbalance using **SMOTE (Synthetic Minority Over-sampling Technique)** to ensure fair model learning across all complaint categories.  
+   The preprocessing phase focused on cleaning and standardizing the complaint text to prepare it for machine learning models. The following steps were applied:
+
+   - **Removal of Null Values and Duplicates:** Ensured dataset integrity by dropping incomplete and duplicate records.  
+   - **Text Normalization:** Converted all text to lowercase for consistency.  
+   - **Noise Removal:** Removed punctuation marks, special symbols, and numbers that do not contribute to classification.  
+   - **Stopword Removal:** Eliminated common English stopwords (e.g., *the, is, and*) using the NLTK stopword list.  
+   - **Tokenization:** Split sentences into individual words (tokens) for detailed text analysis.  
+   - **Lemmatization:** Reduced words to their base or dictionary form (e.g., *“customers” → “customer”*).  
+   - **Handling Class Imbalance:** Used **SMOTE (Synthetic Minority Over-sampling Technique)** to balance underrepresented complaint categories.  
+
 
 3. **Feature Extraction:**  
    Transformed complaint text into numerical vectors using **TF-IDF** for machine learning model input.  
