@@ -80,7 +80,7 @@ Implemented **TF-IDF (Term Frequency–Inverse Document Frequency)** to convert 
 ### **4. Model Training**
 Implemented and compared **Logistic Regression** and **Support Vector Machine (LinearSVC)** for **multi-class text classification**.  
 
-### **5. Evaluation**
+### **5. Model Evaluation**
 Evaluated the model’s performance using **Accuracy**, **Precision**, **Recall**, and **F1-Score** metrics.  
 
 ### **6.Model Validation**
