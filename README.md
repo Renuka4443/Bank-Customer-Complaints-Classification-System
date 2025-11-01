@@ -22,7 +22,7 @@ This project uses two publicly available complaint datasets. The same preprocess
 
 | Dataset Type | Name & Link | Number of Records | Categories Included |
 |---------------|-------------|-------------------|----------------------|
-| **Dataset 1 (Primary)** | [Bank Customer Complaint Analysis](https://www.kaggle.com/datasets/adhamelkomy/bank-customer-complaint-analysis) | **162,421** | Credit Reporting, Debt Collection, Credit Card, Mortgages & Loans, Retail Banking |
+| **Dataset 1 (Primary)** | [Bank Customer Complaint Analysis](https://www.kaggle.com/datasets/adhamelkomy/bank-customer-complaint-analysis) | **162,421** | Credit Reporting, Mortgages & Loans, Debt Collection, Retail Banking, Credit Card |
 | **Dataset 2 (Secondary)** | [Consumer Complaints Data (CFPB)](https://www.kaggle.com/datasets/sebastienverpile/consumercomplaintsdata) | **24,374** | Debt Collection, Mortgage, Credit Reporting, Loan, Credit Card, Bank Account |
 
 > Both datasets contain textual customer complaints along with corresponding product categories, enabling effective **training**, **validation**, and **performance comparison** of machine learning models across varied banking domains.  
@@ -137,7 +137,7 @@ Both models were trained and evaluated on the two datasets using Accuracy, Preci
 
 ## 🚀 Steps to Run the Project
 
-Follow these simple steps to set up and run the project locally on your system.
+Set up and execute the project locally on your PC by following these instructions:
 
 ### 1. Clone the Repository
 
