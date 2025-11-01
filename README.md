@@ -1,7 +1,9 @@
 # 🏦 Bank Complaint Classification System
 
 ## 💼 Overview  
-The **Bank Complaint Classification System** is an **NLP-based solution** that automatically classifies customer complaints received by banks and financial institutions. It uses **machine learning models** trained on real-world complaint data to identify the appropriate product category, such as **Credit Card**, **Bank Account**, **Loans & Mortgages**, and others making the complaint-handling process faster, more efficient, and improving the overall customer experience.  
+
+The **Bank Complaint Classification System** is an **NLP-based application** that categorizes the **customer complaints** that are sent to **banks and financial services**. It makes use of **machine learning models** built on **actual complaint data** to determine the **relevant product**, for instance **Credit Card**, **Bank Account**, **Loans & Mortgages** and others, helping the **customer service** to deal with the complaints **quicker**, **better**, and the **customer experience** to be still **evolved**.  
+
 
 ### 🔑 Key Highlights  
 - **Machine Learning Models Used:**  
@@ -9,7 +11,8 @@ The **Bank Complaint Classification System** is an **NLP-based solution** that a
   2. Support Vector Machine (LinearSVC)
 
 - **Training & Evaluation Datasets:**  
-  The models were trained and evaluated on **two similar real-world datasets**, the **Bank Customer Complaint Dataset** and the **CFPB Consumer Complaint Dataset**, to compare model performance and assess generalization across different data sources.  
+  The models were trained and tested on two closely related real-world datasets, namely the **Bank Customer Complaint Dataset** and the **CFPB Consumer Complaint Dataset**, to analyze the performance of the models and test their generalization to a different source of data.  
+
 
 ---
 
@@ -55,48 +58,52 @@ Below is the end-to-end workflow followed in this project:
   <img src="https://github.com/user-attachments/assets/d72d235b-ed23-404c-9f37-38e242b7d0c1" alt="Methodology Flow Diagram" width="1000">
 </p>
 
-1. **Data Collection:**  
-   Gathered complaint data from two real-world sources: the **Bank Customer Complaint Dataset** and the **CFPB Consumer Complaint Dataset**.  
 
-2. **Data Preprocessing:**  
-   The preprocessing phase focused on cleaning and standardizing the complaint text to prepare it for machine learning models. The following steps were applied:
+### **1. Data Collection**
+The complaint data was collected from two sources of real-world data: the **Bank Customer Complaint Dataset** and the **CFPB Consumer Complaint Dataset**.  
 
-   - **Removal of Null Values and Duplicates:** Ensured dataset integrity by dropping incomplete and duplicate records.  
-   - **Text Normalization:** Converted all text to lowercase for consistency.  
-   - **Noise Removal:** Removed punctuation marks, special symbols, and numbers that do not contribute to classification.  
-   - **Stopword Removal:** Eliminated common English stopwords (e.g., *the, is, and*) using the NLTK stopword list.  
-   - **Tokenization:** Split sentences into individual words (tokens) for detailed text analysis.  
-   - **Lemmatization:** Reduced words to their base or dictionary form (e.g., *“customers” → “customer”*).  
-   - **Handling Class Imbalance:** Used **SMOTE (Synthetic Minority Over-sampling Technique)** to balance underrepresented complaint categories.  
+### **2. Preprocessing Data**
+Preprocessing is mainly concerned with **cleaning** and **normalizing** the complaint text before providing it to the machine learning models.  
+The following steps were taken: 
+
+1. **Removing Null Values and Duplicates:** Dropped all the rows/columns that had null values relating to the column's integrity.  
+2. **Text Normalization:** Converted all text to lowercase for uniformity.  
+3. **Noise Removal:** Removed punctuations, special characters, and numbers that are not useful for classification.  
+4. **Stopword Removal:** Removed common English stopwords like *the*, *is*, and *are*, etc., based on the **NLTK stopword list**.  
+5. **Tokenization:** Broke sentences into words (tokens) for performing fine-grained text analytics.  
+6. **Lemmatization:** Transformed words into their base or dictionary form (e.g., “customers” → “customer”).  
+7. **Addressing Class Imbalance:** Applied **SMOTE (Synthetic Minority Over-sampling Technique)** to balance the underrepresented complaint classes.  
+
+### **3. Feature Extraction**
+Implemented **TF-IDF (Term Frequency–Inverse Document Frequency)** to convert the complaint text into **numerical feature vectors** for the machine learning model.  
+
+### **4. Model Training**
+Implemented and compared **Logistic Regression** and **Support Vector Machine (LinearSVC)** for **multi-class text classification**.  
+
+### **5. Evaluation**
+Evaluated the model’s performance using **Accuracy**, **Precision**, **Recall**, and **F1-Score** metrics.  
+
+### **6.Model Validation**
+Performed **cross-dataset validation** to verify model **robustness** and **generalizability** using the two independent complaint datasets.  
+
+### **7. User Input & Real-Time Prediction**
+The trained model was integrated into a **simple front-end interface**, allowing users to input a complaint and receive an **instant prediction** of the product category, showcasing the ability to deliver **real-time classification**.  
 
 
-3. **Feature Extraction:**  
-   Transformed complaint text into numerical vectors using **TF-IDF** for machine learning model input.  
-
-4. **Model Training:**  
-  Implemented and compared **Logistic Regression** and **Support Vector Machine (LinearSVC)** for multi-class text classification.
-
-5. **Evaluation:**  
-   Measured model performance using **Accuracy**, **Precision**, **Recall**, and **F1-score**.  
-
-6. **Model Validation:**  
-   Conducted **cross-dataset evaluation** to test robustness and generalization across two independent complaint datasets.  
-
-7. **User Input & Real-Time Prediction:**  
-   Integrated the trained model into a simple frontend interface where users can **enter a complaint** and instantly receive the **predicted product category**, demonstrating real-time classification capabilities.
 
    
 ---
 
 ## 🧩 Model Selection Rationale  
 
-Two models were chosen for this project: **Logistic Regression** and **Support Vector Machine (LinearSVC)** due to their proven effectiveness in text classification tasks.  
+Two models were selected for the project: **Logistic Regression** and **Support Vector Machine (LinearSVC)**, as they have been proven to be highly effective for **text classification problems**.  
 
-**Logistic Regression** works well with TF-IDF features, is simple, fast, and interpretable, making it a strong baseline for multi-class text data.  
+- **Logistic Regression** performs well with **TF-IDF features**, and its **simplicity, speed, and interpretability** make it a strong baseline for **multi-class text data**.  
 
-**LinearSVC** performs efficiently on high-dimensional, sparse data, and provides higher precision and recall by finding the optimal separating hyperplane between complaint categories.  
+- **LinearSVC** efficiently handles **high-dimensional sparse data** and achieves even higher **precision** and **recall** by learning an **optimal separating hyperplane** between the categories of complaints.  
 
-Both models balance accuracy, speed, and scalability, making them ideal for real-time complaint classification.  
+Both models effectively balance **accuracy**, **speed**, and **scalability**, making them ideal for **real-time complaint classification** in the banking domain.  
+ 
 
 ---
 
@@ -120,11 +127,11 @@ Both models were trained and evaluated on the two datasets using Accuracy, Preci
 | Logistic Regression | 0.8554 | 0.8563 | 0.8554 | 0.8557 |
 | Support Vector Machine (LinearSVC) | 0.8480 | 0.8486 | 0.8480 | 0.8482 |
 
-### 🔍 Observations  
 
-- **Logistic Regression** slightly outperformed **LinearSVC** on both datasets, demonstrating better generalization and stability.  
-- **LinearSVC** showed competitive performance, proving effective for large-scale, sparse text data.  
-- The consistency of results across both datasets indicates that the models are robust and reliable for real-world complaint classification.
+### 🔍 Observations
+- **Logistic Regression** achieved a better result than the **LinearSVC** in both datasets, indicating it was more stable and generalized better.  
+- **LinearSVC** was also very competitive, working well on large-scale sparse text data.  
+- The uniformly good performance on both datasets suggests that the models are mature and can be effectively used to classify real-world complaints.
 
 ---
 
@@ -227,7 +234,8 @@ Once the app starts, open the **local URL** shown in your terminal to access the
 
 ## 🏁 Conclusion
 
-The Bank Complaint Classification System demonstrates how **machine learning (ML)** and **natural language processing (NLP)** can automate the classification of customer complaints with high accuracy and reliability. By leveraging models such as **Logistic Regression** and **LinearSVC**, the system streamlines complaint handling, improves operational efficiency, and promotes data-driven decision-making within banking services.
+The **Bank Complaint Classification System** illustrates the usage of **Machine Learning (ML)** and **Natural Language Processing (NLP)** techniques for accurate and reliable automated classification of customer complaints. By employing models like **Logistic Regression** and **LinearSVC** for complaint classification, the system enhances the complaint management process by increasing **operational efficiency** and enabling **data-driven decisions** in the banking service areas.
+
 
 ---
 ## 📚 References
