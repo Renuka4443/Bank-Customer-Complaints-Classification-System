@@ -1005,19 +1005,13 @@ def samples_page():
     """, unsafe_allow_html=True)
 
     d1_samples = [
-        ("Credit card", "I was charged an annual fee on my credit card even though it was supposed to be lifetime free. Support hasn’t resolved it and late fees were added."),
-        ("Bank account", "My checking account shows an unauthorized debit and the bank hasn’t reversed it despite multiple complaints."),
-        ("Debt collection", "Debt collector keeps calling me about a loan I never took. They’re threatening legal action."),
-        ("Credit reporting", "My credit report shows an account I don’t recognize and my dispute hasn’t been processed."),
-        ("Mortgages", "Mortgage escrow was miscalculated and my monthly payment increased without clear explanation.")
+        ("Credit Card", "I was charged an annual fee on my credit card even though the bank representative assured me it was a lifetime free card. Customer support has been ignoring my emails for weeks."),
+        ("Mortgages And Loans", "My mortgage payment was deducted twice from my account this month, and despite multiple calls, the refund hasn't been processed yet.")
     ]
 
     d2_samples = [
-        ("Mortgages", "My mortgage payment was deducted twice this month and I still haven’t received a refund. This caused an overdraft fee."),
-        ("Credit card", "My credit card statement has a fraudulent online purchase. The issuer declined my dispute."),
-        ("Debt collection", "Debt collectors are calling my workplace and family about an old medical bill."),
-        ("Bank account", "A savings account transfer is stuck and the bank can’t locate the funds."),
-        ("Credit reporting", "The credit bureau hasn’t removed an inaccurate late payment despite submitting proof.")
+        ("Loan", "Despite multiple payments, my loan account still shows overdue balance and I keep receiving automated threats from recovery agents."),
+        ("Credit reporting", "My credit report has an error showing a mortgage I never took, and the bureau hasn't responded to my dispute for over a month.")
     ]
 
     c1, c2 = st.columns(2)
