@@ -171,6 +171,14 @@ streamlit run app.py
 ```
 Once the app starts, open the **local URL** shown in your terminal to access the **Bank Complaint Classification System**.
 
+---
+
+### 🌐 Live Demo  
+
+You can access the **live demo** of the project here:  
+👉 [**Bank Complaint Classification System - Live Demo**](https://bank-complaint-classification-system.streamlit.app/)  
+
+
 ## 🛠️ Technologies Used  
 
 <div align="center">
